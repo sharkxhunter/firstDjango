@@ -30,5 +30,3 @@ class Choice(models.Model):
     
     def was_published_recently(self):
         return self.pub_date >= timezone.now()-datetime.timedelta(days=1)
-
-    
